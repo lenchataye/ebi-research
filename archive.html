@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plant & Herb Database — Shashemene Flora Archive. Searchable ethnobotanical records with multilingual names and traditional use data.">
+  <meta name="theme-color" content="#0f2922">
+  <title>Plant Archive — Shashemene Flora Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/premium.css">
+</head>
+<body class="page-archive">
+
+  <header class="site-header scrolled">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo">Shashemene Flora Archive<span>Ethnobotanical Research Initiative</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="initiative.html">The Initiative</a></li>
+          <li><a href="researchers.html">Researchers</a></li>
+          <li><a href="archive.html">Plant Archive</a></li>
+          <li><a href="field-research.html">Field Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero--page">
+      <div class="page-hero-bg">
+        <img src="images/plants/kosso.jpg" alt="" aria-hidden="true" onerror="this.style.display='none'">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content reveal">
+        <p class="label-upper">Digital Herbarium</p>
+        <h1>Plant &amp; Herb Database</h1>
+        <p>A searchable record of documented medicinal and culturally significant plants from the Bale-Shashemene region.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="archive-hero-stats reveal" data-stagger>
+          <div class="stat-block">
+            <div class="stat-block__number" id="stat-plants-total" data-counter="4">0</div>
+            <div class="stat-block__label">Total Specimens</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-block__number" id="stat-plants-verified" data-counter="3">0</div>
+            <div class="stat-block__label">Verified Records</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-block__number" data-counter="3">0</div>
+            <div class="stat-block__label">Regions</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-block__number" data-counter="3">0</div>
+            <div class="stat-block__label">Languages</div>
+          </div>
+        </div>
+
+        <div class="archive-controls reveal">
+          <div class="archive-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+            </svg>
+            <input type="search" id="archive-search" placeholder="Search by name, region, or use…" aria-label="Search plants">
+          </div>
+          <div class="filter-tags" id="filter-tags" role="group" aria-label="Filter by region"></div>
+        </div>
+
+        <div class="archive-grid" id="archive-grid" role="list" aria-label="Plant records"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="plant-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close plant details">&times;</button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-partners">
+      <img src="images/partners/ebi.jpg" alt="Ethiopian Biodiversity Institute" class="footer-partner-logo" onerror="this.src='images/partners/placeholder.svg'">
+      <img src="images/partners/mwu.jpg" alt="Madda Walabu University" class="footer-partner-logo" onerror="this.src='images/partners/placeholder.svg'">
+      <img src="images/partners/eaglopen logo.jpg" alt="EAGLOPEN" class="footer-partner-logo" onerror="this.src='images/partners/placeholder.svg'">
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shashemene Flora Archive</h4>
+        <p>An independent ethnobotanical research initiative documenting indigenous botanical knowledge of the Bale-Shashemene Highlands, Ethiopia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <p>Email: <a href="mailto:research@shashemeneflora.org">research@shashemeneflora.org</a></p>
+        <div class="footer-social"><a href="#">LinkedIn</a><a href="#">ResearchGate</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Shashemene Flora Archive. All rights reserved. | Last updated: <span id="last-updated"></span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/archive.js"></script>
+</body>
+</html>
