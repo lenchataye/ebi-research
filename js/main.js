@@ -15,7 +15,7 @@
   const NAV_LINKS = [
     { href: 'index.html', label: 'Home' },
     { href: 'initiative.html', label: 'Initiative' },
-    { href: 'researchers.html', label: 'Researchers' },
+    { href: 'researchers.html', label: 'Contributors' },
     {
       href: 'archive.html',
       label: 'Archive',
