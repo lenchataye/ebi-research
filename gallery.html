@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gallery — Photos and videos from field research and the Shashemene Flora Archive initiative.">
+  <meta name="description" content="Gallery — Photos from the EBI Shashemene Biodiversity Garden internship programme, organized by activity.">
   <meta name="theme-color" content="#0f2922">
   <title>Gallery — Shashemene Flora Archive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
           <li><a href="initiative.html">The Initiative</a></li>
           <li><a href="researchers.html">Researchers</a></li>
           <li><a href="archive.html">Plant Archive</a></li>
-          <li><a href="field-research.html">Field Research</a></li>
+          <li><a href="field-research.html">Internship Work</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="partners.html">Partners</a></li>
@@ -39,61 +39,247 @@
   <main id="main">
     <section class="hero hero--page">
       <div class="page-hero-bg">
-        <img src="images/plants/kosso.jpg" alt="" aria-hidden="true" onerror="this.style.display='none'">
+        <img src="images/sis botanical/sbg.jpg" alt="" aria-hidden="true" onerror="this.style.display='none'">
       </div>
       <div class="hero__overlay"></div>
       <div class="hero__content reveal">
-        <p class="label-upper">Visual Archive</p>
+        <p class="label-upper">Visual Documentation</p>
         <h1>Gallery</h1>
-        <p>Visual documentation from fieldwork, specimen collection, and research events.</p>
+        <p>Curated images from the EBI Shashemene Biodiversity Garden internship programme, organized by activity.</p>
       </div>
     </section>
 
+    <!-- Gallery Categories -->
     <section class="section">
       <div class="container">
-        <div class="gallery-grid reveal">
-
-          <div class="gallery-item" data-lightbox="images/plants/kosso.jpg" data-caption="Kosso — Hagenia abyssinica, Bale Mountain foothills">
-            <img src="images/plants/kosso.jpg" alt="Kosso specimen from Bale Mountain foothills" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
-            <div class="gallery-item__meta">Kosso · Bale Foothills · 2026</div>
+        <!-- Category: Garden Overview -->
+        <div class="gallery-category reveal" id="gallery-garden">
+          <div class="gallery-category__header">
+            <h2>Shashemene Biodiversity Garden</h2>
+            <p class="text-muted">Garden overview, site views, and daily operations</p>
           </div>
-
-          <div class="gallery-item" data-lightbox="images/plants/african wormwood.jpg" data-caption="African Wormwood — Artemisia afra">
-            <img src="images/plants/african wormwood.jpg" alt="African wormwood specimen" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
-            <div class="gallery-item__meta">African Wormwood · Field Documentation</div>
+          <div class="gallery-category__grid">
+            <div class="gallery-category__item gallery-category__item--featured">
+              <img src="images/sis botanical/sbg.jpg" alt="Shashemene Biodiversity Garden overview" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Main garden view — Shashemene Biodiversity Garden</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/SBG-Map.png" alt="SBG Map" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Garden map and layout</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/shashe11.jpg" alt="Garden view" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Garden pathway and collections</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/shasheebi.jpg" alt="EBI Shashemene site" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">EBI Shashemene facility</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/shashemeneebi.jpg" alt="Shashemene EBI" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Shashemene EBI entrance</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/shashemnegreenlegacy.jpg" alt="Green Legacy landscape" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Green Legacy programme area</div>
+            </div>
           </div>
-
-          <div class="gallery-item" data-lightbox="images/researchers/derartupic.png" data-caption="Derartu Taye — Field Data Researcher">
-            <img src="images/researchers/derartupic.png" alt="Derartu Taye in the field" loading="lazy" onerror="this.src='images/researchers/placeholder.svg'">
-            <div class="gallery-item__meta">Field Researcher · Shashemene</div>
-          </div>
-
-          <div class="gallery-item" data-lightbox="images/plants/ethiopian false banana.jpg" data-caption="False Banana — Ensete ventricosum">
-            <img src="images/plants/ethiopian false banana.jpg" alt="Ethiopian false banana" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
-            <div class="gallery-item__meta">False Banana · Sidama Zone</div>
-          </div>
-
-          <div class="gallery-item" data-lightbox="images/plants/ethiopian mint" data-caption="Ethiopian Mint — Mentha spicata">
-            <img src="images/plants/ethiopian mint" alt="Ethiopian mint specimen" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
-            <div class="gallery-item__meta">Ethiopian Mint · Biodiversity Garden</div>
-          </div>
-
-          <div class="gallery-item" data-lightbox="images/researchers/lenisuit.jpg" data-caption="Lencho Taye — Lead Researcher">
-            <img src="images/researchers/lenisuit.jpg" alt="Lencho Taye, Lead Researcher" loading="lazy" onerror="this.src='images/researchers/placeholder.svg'">
-            <div class="gallery-item__meta">Lead Researcher</div>
-          </div>
-
-          <div class="gallery-item" data-lightbox="images/plants/afi.jpg" data-caption="Highland flora specimen">
-            <img src="images/plants/afi.jpg" alt="Highland flora specimen" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
-            <div class="gallery-item__meta">Highland Specimen · 2026</div>
-          </div>
-
-          <div class="gallery-item" data-lightbox="images/partners/ebi.png" data-caption="Ethiopian Biodiversity Institute">
-            <img src="images/partners/ebi.png" alt="EBI Shashemene Biodiversity Garden" loading="lazy" onerror="this.src='images/partners/placeholder.svg'">
-            <div class="gallery-item__meta">Institutional Partner · EBI</div>
-          </div>
-
         </div>
+
+        <!-- Category: Medicinal Plants -->
+        <div class="gallery-category reveal" id="gallery-medicinal">
+          <div class="gallery-category__header">
+            <h2>Medicinal Plants</h2>
+            <p class="text-muted">Documented medicinal plant specimens with trilingual nomenclature</p>
+          </div>
+          <div class="gallery-category__grid">
+            <div class="gallery-category__item gallery-category__item--featured">
+              <img src="images/sis botanical/the plants image/medicinal plant1.jpg" alt="Medicinal plant specimen 1" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Medicinal plant specimen — documented with scientific, Oromo, Amharic, and English names</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/medicinal plant2.jpg" alt="Medicinal plant specimen 2" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Medicinal plant specimen</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/medicinal plant3.jpg" alt="Medicinal plant specimen 3" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Medicinal plant specimen</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/medicinal plant4.jpg" alt="Medicinal plant specimen 4" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Medicinal plant specimen</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/medicinal plant5.jpg" alt="Medicinal plant specimen 5" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Medicinal plant specimen</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/endemic.jpg" alt="Endemic plant species" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Endemic plant species</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/endiginous.jpg" alt="Indigenous plant species" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Indigenous plant species</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/medicinal site.jpg" alt="Medicinal plant site" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Medicinal plant in natural habitat</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Plant Care & Potting -->
+        <div class="gallery-category reveal" id="gallery-potting">
+          <div class="gallery-category__header">
+            <h2>Plant Care & Potting</h2>
+            <p class="text-muted">Nursery work, potting media preparation, and plant maintenance</p>
+          </div>
+          <div class="gallery-category__grid">
+            <div class="gallery-category__item gallery-category__item--featured">
+              <img src="images/sis botanical/the plants image/me preparing the potting.png" alt="Preparing potting media" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Preparing potting media for seedlings</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/me taking notes.png" alt="Taking field notes" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Recording plant data and observations</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/watering.png" alt="Watering plants" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Watering seedlings in the nursery</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/the plants image/photo_1_2026-09-22_05-30-35.jpg" alt="Plant care activity" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Plant care and maintenance</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Vermicompost -->
+        <div class="gallery-category reveal" id="gallery-vermicompost">
+          <div class="gallery-category__header">
+            <h2>Vermicompost Production</h2>
+            <p class="text-muted">Organic compost production using earthworms</p>
+          </div>
+          <div class="gallery-category__grid">
+            <div class="gallery-category__item gallery-category__item--featured">
+              <img src="images/sis botanical/vermi compost/vermicomst.jpg" alt="Vermicompost production" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Finished vermicompost ready for use</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/vermi compost/photo_1_2026-09-22_07-42-49.jpg" alt="Vermicompost setup" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Vermicompost bed preparation</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/vermi compost/photo_2_2026-09-22_07-42-49.jpg" alt="Vermicompost process" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Active vermicompost beds</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/vermi compost/photo_3_2026-09-22_07-42-49.jpg" alt="Vermicompost harvest" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Harvesting vermicompost</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Study & Learning -->
+        <div class="gallery-category reveal" id="gallery-studying">
+          <div class="gallery-category__header">
+            <h2>Study & Learning</h2>
+            <p class="text-muted">Species identification, field guides, and botanical reference</p>
+          </div>
+          <div class="gallery-category__grid">
+            <div class="gallery-category__item gallery-category__item--featured">
+              <img src="images/sis botanical/studying/photo_1_2026-09-22_05-32-05.jpg" alt="Studying plant identification" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Using field guides for species identification</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/studying/photo_1_2026-09-22_06-24-55.jpg" alt="Field guide reference" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Field guide reference work</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/studying/photo_2_2026-09-22_05-32-05 (2).jpg" alt="Species identification practice" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Species identification practice</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/studying/photo_3_2026-09-22_05-32-05 (2).jpg" alt="Plant study session" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Plant study session</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Landscape & Environment -->
+        <div class="gallery-category reveal" id="gallery-landscape">
+          <div class="gallery-category__header">
+            <h2>Landscape & Environment</h2>
+            <p class="text-muted">Surrounding landscape, water resources, and ecological context</p>
+          </div>
+          <div class="gallery-category__grid">
+            <div class="gallery-category__item gallery-category__item--featured">
+              <img src="images/sis botanical/melka oda river.jpg" alt="Melka Oda River" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Melka Oda River — important water resource</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/shashemnegreenlegacy.jpg" alt="Green Legacy landscape" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Green Legacy programme landscape</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/indegineous site/photo_1_2026-09-22_05-26-45.jpg" alt="Indigenous site" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Indigenous plant site</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Supervision & Mentorship -->
+        <div class="gallery-category reveal" id="gallery-supervision">
+          <div class="gallery-category__header">
+            <h2>Supervision & Mentorship</h2>
+            <p class="text-muted">Guidance from EBI supervisors and garden staff</p>
+          </div>
+          <div class="gallery-category__grid">
+            <div class="gallery-category__item gallery-category__item--featured">
+              <img src="images/sis botanical/supervisor jemal1.jpg" alt="Supervisor Jemal providing guidance" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Supervisor Jemal providing field guidance</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/supervisor jemal2.jpg" alt="Supervisor Jemal in the field" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Supervisor Jemal during field work</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Intern at Work -->
+        <div class="gallery-category reveal" id="gallery-intern">
+          <div class="gallery-category__header">
+            <h2>Intern at Work</h2>
+            <p class="text-muted">Documentation of internship tasks and activities</p>
+          </div>
+          <div class="gallery-category__grid">
+            <div class="gallery-category__item gallery-category__item--featured">
+              <img src="images/sis botanical/me in the cmpd/photo_1_2026-09-22_05-26-45.jpg" alt="Intern working in the garden" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Intern performing garden tasks</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/me in the cmpd/photo_2_2026-09-22_05-26-45.jpg" alt="Intern at work" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Plant care activity</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/me in the cmpd/photo_3_2026-09-22_05-26-45.jpg" alt="Intern at work" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Documentation work</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/me in the cmpd/photo_4_2026-09-22_05-26-45.jpg" alt="Intern at work" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Garden maintenance</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/me in the cmpd/photo_5_2026-09-22_05-26-45.jpg" alt="Intern at work" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Compost management</div>
+            </div>
+            <div class="gallery-category__item">
+              <img src="images/sis botanical/me in the cmpd/photo_6_2026-09-22_05-26-45.jpg" alt="Intern at work" loading="lazy" onerror="this.src='images/plants/placeholder.svg'">
+              <div class="gallery-category__caption">Site documentation</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
@@ -112,7 +298,10 @@
       <div class="footer-col">
         <h4>Connect</h4>
         <p>Email: <a href="mailto:research@shashemeneflora.org">research@shashemeneflora.org</a></p>
-        <div class="footer-social"><a href="#">LinkedIn</a><a href="#">ResearchGate</a></div>
+        <div class="footer-social">
+          <a href="#">LinkedIn</a>
+          <a href="#">ResearchGate</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom container">

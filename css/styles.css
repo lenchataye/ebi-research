@@ -2867,6 +2867,343 @@ body:not(.page-home) main { padding-top: var(--header-h); }
   .testimonial-card__photo { margin: 0 auto; }
 }
 
+/* ==========================================================================
+   Activity Cards (Homepage)
+   ========================================================================== */
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.activity-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+}
+
+.activity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.activity-card__image {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.activity-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.activity-card:hover .activity-card__image img {
+  transform: scale(1.04);
+}
+
+.activity-card__body {
+  padding: var(--space-md);
+}
+
+.activity-card__body h3 {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.activity-card__body p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.activity-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--forest);
+  text-decoration: none;
+  transition: gap var(--duration-fast) var(--ease-out);
+}
+
+.activity-card__link:hover {
+  gap: 0.625rem;
+  color: var(--gold);
+}
+
+/* ==========================================================================
+   Activity Gallery (Internship Work Page)
+   ========================================================================== */
+.activity-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.activity-gallery__main {
+  aspect-ratio: 16/10;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-alt);
+  box-shadow: var(--shadow-soft);
+}
+
+.activity-gallery__main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.activity-gallery:hover .activity-gallery__main img {
+  transform: scale(1.02);
+}
+
+.activity-gallery__thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-sm);
+}
+
+.activity-gallery__thumbs img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  transition: transform 0.4s var(--ease-out), opacity 0.4s var(--ease-out);
+  opacity: 0.85;
+}
+
+.activity-gallery__thumbs img:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+/* ==========================================================================
+   Gallery Categories (Gallery Page)
+   ========================================================================== */
+.gallery-category {
+  margin-bottom: var(--space-2xl);
+}
+
+.gallery-category__header {
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.gallery-category__header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+.gallery-category__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.gallery-category__item {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+}
+
+.gallery-category__item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.gallery-category__item--featured {
+  grid-column: span 1;
+  aspect-ratio: 16/10;
+}
+
+.gallery-category__item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.gallery-category__item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-category__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1rem 1rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(15, 41, 34, 0.85) 100%);
+  color: var(--ivory);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s var(--ease-out), transform 0.4s var(--ease-out);
+}
+
+.gallery-category__item:hover .gallery-category__caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .gallery-category__item--featured {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-category__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery-category__item--featured {
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: 1;
+  }
+}
+
+/* ==========================================================================
+   Institution Links (Publications Page)
+   ========================================================================== */
+.institution-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
+.institution-link {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  max-width: 380px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out), border-color 0.4s var(--ease-out);
+}
+
+.institution-link:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+  border-color: var(--gold);
+}
+
+.institution-link__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--gold-soft);
+  border-radius: var(--radius-lg);
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.institution-link__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.institution-link__info h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.institution-link__info p {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.institution-link__arrow {
+  margin-left: auto;
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+  color: var(--gold);
+  transition: transform 0.3s var(--ease-out);
+}
+
+.institution-link:hover .institution-link__arrow {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   Badge variants for archive
+   ========================================================================== */
+.badge--garden { background: var(--gold-soft); color: var(--forest); border-color: var(--gold); }
+.badge--doc { background: rgba(26, 60, 52, 0.1); color: var(--forest); border-color: var(--forest); }
+.badge--nursery { background: rgba(122, 184, 168, 0.15); color: var(--forest); border-color: var(--forest); }
+.badge--compost { background: rgba(156, 104, 52, 0.15); color: #9c6834; border-color: #9c6834; }
+.badge--learn { background: rgba(196, 163, 90, 0.15); color: var(--moss); border-color: var(--gold); }
+.badge--field { background: rgba(26, 60, 52, 0.1); color: var(--forest); border-color: var(--forest); }
+.badge--env { background: rgba(122, 184, 168, 0.15); color: var(--forest); border-color: var(--forest); }
+.badge--train { background: var(--gold-soft); color: var(--forest); border-color: var(--gold); }
+.badge--intern { background: rgba(156, 104, 52, 0.15); color: #9c6834; border-color: #9c6834; }
+
+/* ==========================================================================
+   Responsive adjustments for new components
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .activity-gallery__thumbs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-category__item--featured {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
+  }
+  .gallery-category__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .activity-grid {
+    grid-template-columns: 1fr;
+  }
+  .activity-gallery__thumbs {
+    grid-template-columns: 1fr;
+  }
+  .gallery-category__item--featured {
+    grid-column: span 1;
+    aspect-ratio: 16/10;
+  }
+  .gallery-category__grid {
+    grid-template-columns: 1fr;
+  }
+  .institution-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .institution-link {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 @media (max-width: 360px) {
   .archive-controls { flex-direction: column; }
   .hero__stats { gap: 1.5rem; }

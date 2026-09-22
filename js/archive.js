@@ -1,80 +1,172 @@
 /**
- * Shashemene Flora Archive — Plant Database (Premium)
- * Add entries to the `plants` array below.
+ * Shashemene Flora Archive — Internship Activity Archive (Premium)
+ * Add entries to the `activities` array below.
  */
 
-const plants = [
+const activities = [
   {
-    id: "plant-001",
-    nameEnglish: "Ethiopian Mint",
-    nameOromo: "Damaksa",
-    nameAmharic: "ሃሸና",
-    nameScientific: "Mentha spicata L.",
-    family: "Lamiaceae",
-    region: "Shashemene Biodiversity Garden",
-    distribution: "Widely cultivated in highland gardens; naturalised near water sources in Sidama Zone.",
-    collector: "Derartu Taye",
-    dateCollected: "2026-03-15",
-    traditionalUse: "Used locally for digestive ailments, headaches, and as a general tonic. Leaves are brewed as tea or crushed for topical application on minor wounds.",
-    preparation: "Fresh leaves steeped in hot water for 10–15 minutes. One cup taken twice daily before meals for digestive support.",
-    warnings: "Generally considered safe in traditional doses. Consult a practitioner before use during pregnancy.",
-    status: "Field Reported",
-    references: "Field interview with local herbalist, Shashemene, March 2026. EBI preliminary survey notes (unpublished).",
-    images: ["images/plants/ethiopian mint", "images/plants/afi.jpg"]
+    id: "act-001",
+    title: "Shashemene Biodiversity Garden Overview",
+    category: "Garden Operations",
+    location: "Shashemene Biodiversity Garden, EBI",
+    description: "Primary internship site overview — main garden view, pathways, collections, and daily operations at the EBI Shashemene Biodiversity Garden.",
+    tasks: ["Garden maintenance", "Plant monitoring", "Visitor education support", "Collection management"],
+    supervisors: ["Jemal (Supervisor)", "Kedir Erbo (Director)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/sbg.jpg",
+      "images/sis botanical/SBG-Map.png",
+      "images/sis botanical/shashe11.jpg",
+      "images/sis botanical/shasheebi.jpg",
+      "images/sis botanical/shashemeneebi.jpg",
+      "images/sis botanical/shashemnegreenlegacy.jpg"
+    ]
   },
   {
-    id: "plant-002",
-    nameEnglish: "African Wormwood",
-    nameOromo: "Harmuusa",
-    nameAmharic: "አረም",
-    nameScientific: "Artemisia afra Jacq. ex Willd.",
-    family: "Asteraceae",
-    region: "Bale-Shashemene Highlands",
-    distribution: "Common in highland grasslands and disturbed areas from 1,800–3,500m elevation.",
-    collector: "Derartu Taye",
-    dateCollected: "2026-04-02",
-    traditionalUse: "Traditionally used for respiratory conditions, fever reduction, and as an insect repellent when burned as incense.",
-    preparation: "Dried leaves and stems boiled in water; steam inhaled for congestion. Poultice applied to temples for headache relief.",
-    warnings: "Not recommended for prolonged internal use. Avoid during pregnancy.",
-    status: "Cross-Referenced",
-    references: "Local ethnobotanical survey, 2026. Cross-referenced with EBI herbarium specimen #EBI-SH-042.",
-    images: ["images/plants/african wormwood.jpg"]
+    id: "act-002",
+    title: "Medicinal Plant Documentation",
+    category: "Plant Documentation",
+    location: "Shashemene Biodiversity Garden & Indigenous Sites",
+    description: "Recording medicinal plant specimens with trilingual nomenclature (scientific, Afaan Oromo, Amharic, English) and traditional use descriptions from community knowledge-holders.",
+    tasks: ["Species identification", "Photographic documentation", "Trilingual name recording", "Traditional use interviews", "GPS coordinate logging"],
+    supervisors: ["Jemal (Supervisor)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/the plants image/medicinal plant1.jpg",
+      "images/sis botanical/the plants image/medicinal plant2.jpg",
+      "images/sis botanical/the plants image/medicinal plant3.jpg",
+      "images/sis botanical/the plants image/medicinal plant4.jpg",
+      "images/sis botanical/the plants image/medicinal plant5.jpg",
+      "images/sis botanical/the plants image/endemic.jpg",
+      "images/sis botanical/the plants image/endiginous.jpg",
+      "images/sis botanical/the plants image/medicinal site.jpg"
+    ]
   },
   {
-    id: "plant-003",
-    nameEnglish: "False Banana",
-    nameOromo: "Waqeensa",
-    nameAmharic: "ሽንኩርት",
-    nameScientific: "Ensete ventricosum (Welw.) Cheesman",
-    family: "Musaceae",
-    region: "Sidama Zone, near Shashemene",
-    distribution: "Staple crop across southern Ethiopian highlands; cultivated extensively in Sidama and Gurage areas.",
-    collector: "Derartu Taye",
-    dateCollected: "2026-02-20",
-    traditionalUse: "Staple food crop with documented use of pseudostem extracts for wound healing and bone-setting support in traditional medicine.",
-    preparation: "Pseudostem pulp fermented (kocho) for nutrition; sap applied directly to fractures and sprains under traditional practitioner guidance.",
-    warnings: "Sap application for bone-setting requires trained traditional practitioner supervision.",
-    status: "Lab Verified",
-    references: "EBI ethnobotanical database entry. Lab verification: phytochemical screening, EBI Shashemene, 2026.",
-    images: ["images/plants/ethiopian false banana.jpg", "images/plants/afi.jpg"]
+    id: "act-003",
+    title: "Plant Care & Potting",
+    category: "Nursery Operations",
+    location: "Shashemene Biodiversity Garden Nursery",
+    description: "Preparing potting media, transplanting seedlings, watering schedules, and nursery maintenance for native Ethiopian plant species.",
+    tasks: ["Potting media preparation", "Seedling transplantation", "Watering management", "Growth monitoring", "Field note recording"],
+    supervisors: ["Jemal (Supervisor)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/the plants image/me preparing the potting.png",
+      "images/sis botanical/the plants image/me taking notes.png",
+      "images/sis botanical/the plants image/watering.png",
+      "images/sis botanical/the plants image/photo_1_2026-09-22_05-30-35.jpg"
+    ]
   },
   {
-    id: "plant-004",
-    nameEnglish: "Kosso",
-    nameOromo: "Hargessa",
-    nameAmharic: "ቆሶ",
-    nameScientific: "Hagenia abyssinica (Bruce) J.F.Gmel.",
-    family: "Rosaceae",
-    region: "Bale Mountain foothills",
-    distribution: "Afromontane forests of Ethiopia, Kenya, Tanzania, and Uganda between 2,000–3,300m.",
-    collector: "Lencho Taye",
-    dateCollected: "2026-01-10",
-    traditionalUse: "Bark powder traditionally used as anthelmintic (tapeworm treatment). One of the most documented Ethiopian medicinal plants in historical literature.",
-    preparation: "Dried bark ground to powder; small doses taken with water on empty stomach under strict traditional dosage protocols.",
-    warnings: "Toxic in large doses. Traditional use requires precise dosing — never exceed practitioner-recommended amounts.",
-    status: "Cross-Referenced",
-    references: "Abbink, J. (1995). Medicinal plants of Ethiopia. Cross-ref: EBI herbarium #EBI-BALE-018. Field notes, Lencho Taye, Jan 2026.",
-    images: ["images/plants/kosso.jpg"]
+    id: "act-004",
+    title: "Vermicompost Production",
+    category: "Soil & Compost",
+    location: "Shashemene Biodiversity Garden Compost Area",
+    description: "Producing vermicompost using earthworms for organic soil enrichment — bed preparation, moisture management, and harvest.",
+    tasks: ["Bedding preparation", "Earthworm management", "Moisture & temperature monitoring", "Compost harvesting", "Application in nursery"],
+    supervisors: ["Jemal (Supervisor)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/vermi compost/vermicomst.jpg",
+      "images/sis botanical/vermi compost/photo_1_2026-09-22_07-42-49.jpg",
+      "images/sis botanical/vermi compost/photo_2_2026-09-22_07-42-49.jpg",
+      "images/sis botanical/vermi compost/photo_3_2026-09-22_07-42-49.jpg"
+    ]
+  },
+  {
+    id: "act-005",
+    title: "Study & Species Identification",
+    category: "Learning & Training",
+    location: "Shashemene Biodiversity Garden & Field Sites",
+    description: "Regular study sessions using field guides and reference materials for species identification practice and botanical terminology learning.",
+    tasks: ["Field guide reference", "Species identification practice", "Botanical terminology study", "Herbarium specimen review"],
+    supervisors: ["Jemal (Supervisor)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/studying/photo_1_2026-09-22_05-32-05.jpg",
+      "images/sis botanical/studying/photo_1_2026-09-22_06-24-55.jpg",
+      "images/sis botanical/studying/photo_2_2026-09-22_05-32-05 (2).jpg",
+      "images/sis botanical/studying/photo_3_2026-09-22_05-32-05 (2).jpg"
+    ]
+  },
+  {
+    id: "act-006",
+    title: "Indigenous Plant Site Documentation",
+    category: "Field Documentation",
+    location: "Bale-Shashemene Highlands Indigenous Sites",
+    description: "Field visits to indigenous plant sites documenting species in natural habitat with GPS coordinates, associated species, and habitat conditions.",
+    tasks: ["Habitat assessment", "GPS coordinate logging", "Associated species recording", "Threat assessment", "Ecological context documentation"],
+    supervisors: ["Jemal (Supervisor)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/the plants image/endemic.jpg",
+      "images/sis botanical/the plants image/endiginous.jpg",
+      "images/sis botanical/the plants image/medicinal site.jpg",
+      "images/sis botanical/indegineous site/photo_1_2026-09-22_05-26-45.jpg"
+    ]
+  },
+  {
+    id: "act-007",
+    title: "Vermicompost Production",
+    category: "Soil & Compost",
+    location: "Shashemene Biodiversity Garden Compost Area",
+    description: "Full vermicompost production cycle — bed preparation, earthworm management, moisture/temperature monitoring, and harvest for nursery use.",
+    tasks: ["Bed preparation", "Earthworm introduction", "Moisture & temperature monitoring", "Feeding schedule management", "Harvest & nursery application"],
+    supervisors: ["Jemal (Supervisor)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/vermi compost/vermicomst.jpg",
+      "images/sis botanical/vermi compost/photo_1_2026-09-22_07-42-49.jpg",
+      "images/sis botanical/vermi compost/photo_2_2026-09-22_07-42-49.jpg",
+      "images/sis botanical/vermi compost/photo_3_2026-09-22_07-42-49.jpg"
+    ]
+  },
+  {
+    id: "act-008",
+    title: "Landscape & Water Resources",
+    category: "Environmental Context",
+    location: "Melka Oda River & Surrounding Landscape",
+    description: "Documenting the broader ecological context — Melka Oda River, Green Legacy landscape, and surrounding highland environment.",
+    tasks: ["Water resource documentation", "Landscape photography", "Ecological context recording", "River condition assessment"],
+    supervisors: ["Jemal (Supervisor)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/melka oda river.jpg",
+      "images/sis botanical/shashemnegreenlegacy.jpg"
+    ]
+  },
+  {
+    id: "act-009",
+    title: "Supervision & Mentorship",
+    category: "Training & Mentorship",
+    location: "Shashemene Biodiversity Garden",
+    description: "Daily guidance from Supervisor Jemal on garden operations, plant identification, documentation techniques, and proper protocols.",
+    tasks: ["Plant identification training", "Protocol instruction", "Field technique demonstration", "Quality assurance oversight"],
+    supervisors: ["Jemal (Supervisor)", "Kedir Erbo (Director)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/supervisor jemal1.jpg",
+      "images/sis botanical/supervisor jemal2.jpg"
+    ]
+  },
+  {
+    id: "act-010",
+    title: "Intern at Work — Daily Tasks",
+    category: "Intern Activities",
+    location: "Shashemene Biodiversity Garden",
+    description: "Documentation of the intern performing various garden tasks — plant care, compost management, documentation, and site maintenance.",
+    tasks: ["Plant care & watering", "Compost management", "Data recording", "Site maintenance", "Documentation & photography"],
+    supervisors: ["Jemal (Supervisor)"],
+    dateRange: "Ongoing through 2026",
+    images: [
+      "images/sis botanical/me in the cmpd/photo_1_2026-09-22_05-26-45.jpg",
+      "images/sis botanical/me in the cmpd/photo_2_2026-09-22_05-26-45.jpg",
+      "images/sis botanical/me in the cmpd/photo_3_2026-09-22_05-26-45.jpg",
+      "images/sis botanical/me in the cmpd/photo_4_2026-09-22_05-26-45.jpg",
+      "images/sis botanical/me in the cmpd/photo_5_2026-09-22_05-26-45.jpg",
+      "images/sis botanical/me in the cmpd/photo_6_2026-09-22_05-26-45.jpg"
+    ]
   }
 ];
 
@@ -94,63 +186,62 @@ const plants = [
   let activeFilter = 'all';
   let searchQuery = '';
 
-  const regions = [...new Set(plants.map(p => p.region))];
+  const categories = [...new Set(activities.map(a => a.category))];
 
-  if (statTotal) statTotal.dataset.counter = plants.length;
-  if (statVerified) {
-    statVerified.dataset.counter = plants.filter(p => p.status === 'Lab Verified' || p.status === 'Cross-Referenced').length;
+  if (statTotal) statTotal.dataset.counter = activities.length;
+  if (statVerified) statVerified.dataset.counter = activities.length;
+
+  function getStatusClass(category) {
+    const map = {
+      'Garden Operations': 'badge--garden',
+      'Plant Documentation': 'badge--doc',
+      'Nursery Operations': 'badge--nursery',
+      'Soil & Compost': 'badge--compost',
+      'Learning & Training': 'badge--learn',
+      'Field Documentation': 'badge--field',
+      'Environmental Context': 'badge--env',
+      'Training & Mentorship': 'badge--train',
+      'Intern Activities': 'badge--intern'
+    };
+    return map[category] || 'badge--field';
   }
 
-  function getStatusClass(status) {
-    if (status === 'Lab Verified') return 'badge--lab';
-    if (status === 'Cross-Referenced') return 'badge--cross';
-    return 'badge--field';
+  function getCategoryLabel(category) {
+    return category;
   }
 
-  function getRelated(currentId) {
-    const current = plants.find(p => p.id === currentId);
-    if (!current) return [];
-    return plants.filter(p => p.id !== currentId && p.region === current.region).slice(0, 3);
-  }
-
-  function filterPlants() {
-    return plants.filter(plant => {
-      const matchesRegion = activeFilter === 'all' || plant.region === activeFilter;
+  function filterActivities() {
+    return activities.filter(activity => {
+      const matchesCategory = activeFilter === 'all' || activity.category === activeFilter;
       const q = searchQuery.toLowerCase();
       const matchesSearch = !q ||
-        plant.nameEnglish.toLowerCase().includes(q) ||
-        plant.nameOromo.toLowerCase().includes(q) ||
-        plant.nameAmharic.includes(q) ||
-        plant.nameScientific.toLowerCase().includes(q) ||
-        plant.traditionalUse.toLowerCase().includes(q) ||
-        plant.region.toLowerCase().includes(q);
-      return matchesRegion && matchesSearch;
+        activity.title.toLowerCase().includes(q) ||
+        activity.description.toLowerCase().includes(q) ||
+        activity.category.toLowerCase().includes(q) ||
+        activity.location.toLowerCase().includes(q) ||
+        activity.tasks.some(t => t.toLowerCase().includes(q));
+      return matchesCategory && matchesSearch;
     });
   }
 
   function renderCards(list) {
     if (!list.length) {
-      grid.innerHTML = `<div class="archive-empty"><p>No plants match your search. Try a different term or filter.</p></div>`;
+      grid.innerHTML = `<div class="archive-empty"><p>No activities match your search. Try a different term or filter.</p></div>`;
       return;
     }
 
-    grid.innerHTML = list.map((plant, i) => `
-      <article class="plant-card reveal" data-plant-id="${plant.id}" tabindex="0" role="button"
-               aria-label="View details for ${plant.nameEnglish}" style="transition-delay: ${i * 60}ms">
+    grid.innerHTML = list.map((activity, i) => `
+      <article class="plant-card reveal" data-plant-id="${activity.id}" tabindex="0" role="button"
+               aria-label="View details for ${activity.title}" style="transition-delay: ${i * 60}ms">
         <div class="plant-card__image">
-          <img src="${plant.images[0]}" alt="${plant.nameEnglish} — ${plant.nameScientific}" loading="lazy"
+          <img src="${activity.images[0]}" alt="${activity.title}" loading="lazy"
                onerror="this.src='images/plants/placeholder.svg'">
         </div>
         <div class="plant-card__body">
-          <span class="badge ${getStatusClass(plant.status)}">${plant.status}</span>
-          <div class="plant-card__names">
-            <h3>${plant.nameEnglish}</h3>
-            <p class="name-oromo">${plant.nameOromo}</p>
-            <p class="name-amharic">${plant.nameAmharic}</p>
-          </div>
-          <p class="plant-card__scientific scientific-name">${plant.nameScientific}</p>
-          <p class="plant-card__region">${plant.region}</p>
-          <p class="plant-card__use">${plant.traditionalUse}</p>
+          <span class="badge ${getStatusClass(activity.category)}">${getCategoryLabel(activity.category)}</span>
+          <h3>${activity.title}</h3>
+          <p class="plant-card__region">${activity.location}</p>
+          <p class="plant-card__use">${activity.description}</p>
         </div>
       </article>
     `).join('');
@@ -178,134 +269,65 @@ const plants = [
   }
 
   function openModal(id) {
-    const plant = plants.find(p => p.id === id);
-    if (!plant || !modalOverlay || !modalBody) return;
-
-    const related = getRelated(id);
-    const citation = `${plant.nameScientific}. Collected ${plant.dateCollected}, ${plant.region}. Shashemene Flora Archive. Status: ${plant.status}.`;
+    const activity = activities.find(a => a.id === id);
+    if (!activity || !modalOverlay || !modalBody) return;
 
     modalBody.innerHTML = `
       <div class="modal__gallery">
-        ${plant.images.map((src, i) => `
-          <img src="${src}" alt="${plant.nameEnglish} — image ${i + 1}" loading="lazy"
+        ${activity.images.map((src, i) => `
+          <img src="${src}" alt="${activity.title} — image ${i + 1}" loading="lazy"
                onerror="this.src='images/plants/placeholder.svg'">
         `).join('')}
       </div>
       <div class="modal__body">
-        <p class="label-upper">${plant.family || 'Plantae'}</p>
-        <h2 id="modal-title">${plant.nameEnglish}</h2>
-        <p class="name-oromo">${plant.nameOromo} · ${plant.nameAmharic}</p>
-        <p class="scientific-name">${plant.nameScientific}</p>
+        <p class="label-upper">${activity.category}</p>
+        <h2 id="modal-title">${activity.title}</h2>
+        <p class="plant-card__region">${activity.location}</p>
         <div class="modal__meta">
-          <span class="badge ${getStatusClass(plant.status)}">${plant.status}</span>
-          <span>${plant.region}</span>
-          <span>Collected by ${plant.collector}, ${plant.dateCollected}</span>
+          <span class="badge ${getStatusClass(activity.category)}">${getCategoryLabel(activity.category)}</span>
+          <span>${activity.dateRange}</span>
         </div>
 
-        <div class="tabs">
-          <div class="tab-list" role="tablist">
-            <button class="tab-btn active" data-tab="use" role="tab">Traditional Use</button>
-            <button class="tab-btn" data-tab="prep" role="tab">Preparation</button>
-            <button class="tab-btn" data-tab="science" role="tab">Classification</button>
-            <button class="tab-btn" data-tab="refs" role="tab">References</button>
-          </div>
-          <div class="tab-panel active" data-panel="use" role="tabpanel">
-            <div class="modal__section">
-              <h4>Traditional Use</h4>
-              <p>${plant.traditionalUse}</p>
-            </div>
-            ${plant.warnings ? `<div class="modal__section"><h4>Warnings</h4><p>${plant.warnings}</p></div>` : ''}
-          </div>
-          <div class="tab-panel" data-panel="prep" role="tabpanel">
-            <div class="modal__section">
-              <h4>Preparation Method</h4>
-              <p>${plant.preparation}</p>
-            </div>
-          </div>
-          <div class="tab-panel" data-panel="science" role="tabpanel">
-            <div class="modal__section">
-              <h4>Scientific Classification</h4>
-              <p><strong>Family:</strong> ${plant.family || '—'}</p>
-              <p class="scientific-name"><strong>Species:</strong> ${plant.nameScientific}</p>
-            </div>
-            <div class="modal__section">
-              <h4>Distribution</h4>
-              <p>${plant.distribution || plant.region}</p>
-            </div>
-          </div>
-          <div class="tab-panel" data-panel="refs" role="tabpanel">
-            <div class="modal__section">
-              <h4>References</h4>
-              <p class="modal__references">${plant.references}</p>
-            </div>
-          </div>
+        <div class="modal__section">
+          <h4>Description</h4>
+          <p>${activity.description}</p>
         </div>
 
-        ${related.length ? `
-          <div class="modal__section">
-            <h4>Related Specimens</h4>
-            <div class="related-plants">
-              ${related.map(r => `
-                <div class="related-plants__item" data-plant-id="${r.id}" role="button" tabindex="0">
-                  <img src="${r.images[0]}" alt="${r.nameEnglish}" onerror="this.src='images/plants/placeholder.svg'">
-                  <span>${r.nameEnglish}</span>
-                </div>
-              `).join('')}
-            </div>
-          </div>` : ''}
+        <div class="modal__section">
+          <h4>Tasks Performed</h4>
+          <ul style="margin-left: 1.5rem; line-height: 2;">
+            ${activity.tasks.map(t => `<li>${t}</li>`).join('')}
+          </ul>
+        </div>
+
+        <div class="modal__section">
+          <h4>Supervisors</h4>
+          <ul style="margin-left: 1.5rem; line-height: 2;">
+            ${activity.supervisors.map(s => `<li>${s}</li>`).join('')}
+          </ul>
+        </div>
+
+        <div class="modal__section">
+          <h4>Date Range</h4>
+          <p>${activity.dateRange}</p>
+        </div>
 
         <div class="modal__actions">
-          <button class="btn btn--ghost btn--small" data-copy-citation="modal-citation">Copy Citation</button>
           <button class="btn btn--ghost btn--small" data-print>Print Record</button>
-          <button class="btn btn--ghost btn--small" data-bookmark="${plant.id}">Bookmark</button>
-          <a href="#" class="btn btn--primary btn--small" data-modal="pdf-download">Download PDF</a>
+          <button class="btn btn--ghost btn--small" data-bookmark="${activity.id}">Bookmark</button>
         </div>
-        <p id="modal-citation" class="visually-hidden">${citation}</p>
       </div>
     `;
 
     modalOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
 
-    modalBody.querySelectorAll('.related-plants__item').forEach(item => {
-      item.addEventListener('click', () => openModal(item.dataset.plantId));
-    });
-
-    initTabsInModal();
-    initModalCitation();
     if (window.initTabs) window.initTabs();
-  }
-
-  function initTabsInModal() {
-    const tabGroup = modalBody.querySelector('.tabs');
-    if (!tabGroup) return;
-    tabGroup.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const target = btn.dataset.tab;
-        tabGroup.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        tabGroup.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        tabGroup.querySelector(`[data-panel="${target}"]`)?.classList.add('active');
-      });
-    });
-  }
-
-  function initModalCitation() {
-    modalBody.querySelector('[data-copy-citation]')?.addEventListener('click', async () => {
-      const text = document.getElementById('modal-citation')?.textContent.trim();
-      if (text) await navigator.clipboard.writeText(text);
-    });
-  }
-
-  function closeModal() {
-    if (!modalOverlay) return;
-    modalOverlay.classList.remove('active');
-    document.body.style.overflow = '';
   }
 
   function initFilters() {
     if (!filterContainer) return;
-    const tags = [{ label: 'All Regions', value: 'all' }, ...regions.map(r => ({ label: r, value: r }))];
+    const tags = [{ label: 'All Activities', value: 'all' }, ...categories.map(c => ({ label: c, value: c }))];
     filterContainer.innerHTML = tags.map(tag => `
       <button class="filter-tag${tag.value === 'all' ? ' active' : ''}" data-filter="${tag.value}">${tag.label}</button>
     `).join('');
@@ -317,11 +339,11 @@ const plants = [
         activeFilter = btn.dataset.filter;
         if (typeof gsap !== 'undefined') {
           gsap.to(grid, { opacity: 0, y: 12, duration: 0.2, onComplete: () => {
-            renderCards(filterPlants());
+            renderCards(filterActivities());
             gsap.to(grid, { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out' });
           }});
         } else {
-          renderCards(filterPlants());
+          renderCards(filterActivities());
         }
       });
     });
@@ -331,7 +353,7 @@ const plants = [
     if (!searchInput) return;
     searchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value;
-      renderCards(filterPlants());
+      renderCards(filterActivities());
     });
   }
 
@@ -344,10 +366,16 @@ const plants = [
     });
   }
 
+  function closeModal() {
+    if (!modalOverlay) return;
+    modalOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     initFilters();
     initSearch();
     initModal();
-    renderCards(plants);
+    renderCards(activities);
   });
 })();

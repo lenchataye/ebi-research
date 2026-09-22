@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Plant & Herb Database — Shashemene Flora Archive. Searchable ethnobotanical records with multilingual names and traditional use data.">
+  <meta name="description" content="Internship Activity Archive — Documented activities from the EBI Shashemene Biodiversity Garden internship programme.">
   <meta name="theme-color" content="#0f2922">
-  <title>Plant Archive — Shashemene Flora Archive</title>
+  <title>Internship Archive — Shashemene Flora Archive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -26,7 +26,7 @@
           <li><a href="initiative.html">The Initiative</a></li>
           <li><a href="researchers.html">Researchers</a></li>
           <li><a href="archive.html">Plant Archive</a></li>
-          <li><a href="field-research.html">Field Research</a></li>
+          <li><a href="field-research.html">Internship Work</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="partners.html">Partners</a></li>
@@ -39,13 +39,13 @@
   <main id="main">
     <section class="hero hero--page">
       <div class="page-hero-bg">
-        <img src="images/plants/kosso.jpg" alt="" aria-hidden="true" onerror="this.style.display='none'">
+        <img src="images/sis botanical/sbg.jpg" alt="" aria-hidden="true" onerror="this.style.display='none'">
       </div>
       <div class="hero__overlay"></div>
       <div class="hero__content reveal">
-        <p class="label-upper">Digital Herbarium</p>
-        <h1>Plant &amp; Herb Database</h1>
-        <p>A searchable record of documented medicinal and culturally significant plants from the Bale-Shashemene region.</p>
+        <p class="label-upper">Activity Archive</p>
+        <h1>Internship Archive</h1>
+        <p>Organized records of activities documented during the EBI Shashemene Biodiversity Garden internship.</p>
       </div>
     </section>
 
@@ -53,20 +53,20 @@
       <div class="container">
         <div class="archive-hero-stats reveal" data-stagger>
           <div class="stat-block">
-            <div class="stat-block__number" id="stat-plants-total" data-counter="4">0</div>
-            <div class="stat-block__label">Total Specimens</div>
+            <div class="stat-block__number" data-counter="9">0</div>
+            <div class="stat-block__label">Activity Categories</div>
           </div>
           <div class="stat-block">
-            <div class="stat-block__number" id="stat-plants-verified" data-counter="3">0</div>
-            <div class="stat-block__label">Verified Records</div>
+            <div class="stat-block__number" data-counter="50">0</div>
+            <div class="stat-block__label">Documented Images</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-block__number" data-counter="1">0</div>
+            <div class="stat-block__label">Internship Site</div>
           </div>
           <div class="stat-block">
             <div class="stat-block__number" data-counter="3">0</div>
-            <div class="stat-block__label">Regions</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-block__number" data-counter="3">0</div>
-            <div class="stat-block__label">Languages</div>
+            <div class="stat-block__label">Supervisors</div>
           </div>
         </div>
 
@@ -75,19 +75,19 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
             </svg>
-            <input type="search" id="archive-search" placeholder="Search by name, region, or use…" aria-label="Search plants">
+            <input type="search" id="archive-search" placeholder="Search activities, tasks, or locations…" aria-label="Search activities">
           </div>
-          <div class="filter-tags" id="filter-tags" role="group" aria-label="Filter by region"></div>
+          <div class="filter-tags" id="filter-tags" role="group" aria-label="Filter by activity type"></div>
         </div>
 
-        <div class="archive-grid" id="archive-grid" role="list" aria-label="Plant records"></div>
+        <div class="archive-grid" id="archive-grid" role="list" aria-label="Activity records"></div>
       </div>
     </section>
   </main>
 
   <div class="modal-overlay" id="plant-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal">
-      <button class="modal__close" aria-label="Close plant details">&times;</button>
+      <button class="modal__close" aria-label="Close activity details">&times;</button>
       <div id="modal-body-content"></div>
     </div>
   </div>

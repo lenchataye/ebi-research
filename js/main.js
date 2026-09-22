@@ -24,7 +24,7 @@
         { href: 'gallery.html', label: 'Visual Gallery', img: 'images/plants/african wormwood.jpg' }
       ]
     },
-    { href: 'field-research.html', label: 'Field Research' },
+    { href: 'field-research.html', label: 'Internship Work' },
     { href: 'publications.html', label: 'Publications' },
     { href: 'partners.html', label: 'Partners' },
     { href: 'contact.html', label: 'Contact' }
