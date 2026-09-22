@@ -1060,3 +1060,378 @@ html.lenis, html.lenis body { height: auto; }
   font-size: 0.8125rem;
   line-height: 1.7;
 }
+
+/* ==========================================================================
+   SCOPED POLISH — Researchers page only (no global impact)
+   Order: 01 Derartu · 02 Kedir · 03 Jemal · 04 Lencho
+   Smaller portraits + premium right-side typography
+   ========================================================================== */
+.page-researchers .researcher-card {
+  grid-template-columns: 200px 1fr;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  align-items: start;
+}
+
+/* Smaller, refined circular portraits */
+.page-researchers .researcher-card__photo {
+  width: 168px;
+  height: 168px;
+  flex-shrink: 0;
+}
+
+.page-researchers .special-thanks-card__photo {
+  width: 112px;
+  height: 112px;
+}
+
+.page-researchers .special-thanks-card {
+  grid-template-columns: 132px 1fr;
+  gap: var(--space-lg);
+}
+
+/* Index number badge on portrait */
+.page-researchers .researcher-card__photo .researcher-index {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  z-index: 3;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--ivory);
+  background: rgba(15, 41, 34, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(196, 163, 90, 0.55);
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(15, 41, 34, 0.25);
+}
+
+/* Right-side editorial typography */
+.page-researchers .researcher-card__content {
+  min-width: 0;
+  border-left: 1px solid var(--border);
+  padding-left: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.page-researchers .researcher-card__role {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  background: var(--gold-soft);
+  border: 1px solid rgba(196, 163, 90, 0.35);
+  border-radius: 999px;
+  margin-bottom: 0.9rem;
+}
+
+.page-researchers .researcher-card__role .role-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 3px rgba(196, 163, 90, 0.2);
+  flex-shrink: 0;
+}
+
+.page-researchers .researcher-card__content h2 {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.35rem;
+}
+
+.page-researchers .researcher-card__affiliation {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--stone);
+  border-left: 2px solid var(--gold);
+  padding-left: 0.85rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.page-researchers .researcher-lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+  line-height: 1.55;
+  color: var(--heading);
+  margin-bottom: 1rem;
+  max-width: 62ch;
+}
+
+.page-researchers .researcher-card__content > p:not(.researcher-card__role):not(.researcher-card__affiliation):not(.researcher-lead):not(.label-upper) {
+  color: var(--text-muted);
+  font-size: 0.975rem;
+  line-height: 1.85;
+  margin-bottom: 0.9rem;
+  max-width: 68ch;
+}
+
+.page-researchers .researcher-note {
+  font-size: 0.875rem !important;
+  border-left: 2px solid var(--gold);
+  padding-left: 0.85rem;
+  max-width: 62ch;
+}
+
+/* Lead card accent (Derartu — 01) */
+.page-researchers .researcher-card--lead {
+  border-top: 3px solid var(--gold);
+}
+
+@media (max-width: 1024px) {
+  .page-researchers .researcher-card {
+    grid-template-columns: 1fr;
+  }
+  .page-researchers .researcher-card__photo {
+    width: 148px;
+    height: 148px;
+    margin-bottom: 0.5rem;
+  }
+  .page-researchers .researcher-card__content {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 1.75rem;
+    text-align: left;
+  }
+  .page-researchers .researcher-card__role,
+  .page-researchers .researcher-card__affiliation,
+  .page-researchers .researcher-card__quote,
+  .page-researchers .researcher-skills,
+  .page-researchers .researcher-card__links {
+    text-align: left;
+  }
+  .page-researchers .researcher-card__quote {
+    border-left: 2px solid var(--gold);
+    border-top: none;
+    padding-left: var(--space-md);
+    padding-top: 0;
+  }
+  .page-researchers .researcher-card__links,
+  .page-researchers .researcher-metrics {
+    justify-content: flex-start;
+  }
+  .page-researchers .special-thanks-card {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .page-researchers .special-thanks-card__photo {
+    margin: 0;
+  }
+  .page-researchers .special-thanks-card__contacts {
+    justify-content: flex-start;
+  }
+}
+
+/* ==========================================================================
+   SCOPED POLISH — Internship Work page, supervision block only
+   Single circular supervisor portrait + editorial text beside it
+   ========================================================================== */
+.page-field .supervisor-profile {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  align-items: start;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem);
+  box-shadow: var(--shadow-soft);
+  max-width: 960px;
+}
+
+.page-field .supervisor-profile__photo {
+  position: relative;
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  overflow: visible;
+  justify-self: center;
+  flex-shrink: 0;
+}
+
+.page-field .supervisor-profile__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid var(--card-bg);
+  outline: 2px solid transparent;
+  background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(135deg, var(--gold), var(--forest)) border-box;
+  box-shadow: 0 8px 28px rgba(15, 41, 34, 0.16);
+}
+
+.page-field .supervisor-profile__badge {
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.5625rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ivory);
+  background: var(--moss);
+  border: 1px solid rgba(196, 163, 90, 0.5);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+}
+
+.page-field .supervisor-profile__role {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--gold-soft);
+  border: 1px solid rgba(196, 163, 90, 0.35);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.page-field .supervisor-profile__role .role-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 3px rgba(196, 163, 90, 0.2);
+}
+
+.page-field .supervisor-profile__content h3 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  line-height: 1.1;
+  margin-bottom: 0.3rem;
+}
+
+.page-field .supervisor-profile__affiliation {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 1rem;
+}
+
+.page-field .supervisor-profile__lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.55;
+  color: var(--heading);
+  margin-bottom: 0.9rem;
+  max-width: 60ch;
+}
+
+.page-field .supervisor-profile__content > p:not(.supervisor-profile__role):not(.supervisor-profile__affiliation):not(.supervisor-profile__lead) {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 1rem;
+  max-width: 66ch;
+}
+
+.page-field .supervisor-profile__list {
+  margin: 1rem 0 1.25rem;
+  padding: 1rem 1.15rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 10px 10px 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.page-field .supervisor-profile__list li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.page-field .supervisor-profile__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.page-field .supervisor-profile__list strong {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.page-field .supervisor-profile__quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: var(--heading);
+  border-left: 2px solid var(--gold);
+  padding-left: 1rem;
+  margin: 1.1rem 0;
+  line-height: 1.55;
+}
+
+.page-field .supervisor-profile__links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.page-field .supervisor-profile__links a {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--forest);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 2px;
+}
+
+.page-field .supervisor-profile__links a:hover {
+  color: var(--gold);
+}
+
+.page-field .supervisor-profile__sep {
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .page-field .supervisor-profile {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding-top: 2rem;
+  }
+  .page-field .supervisor-profile__photo {
+    width: 148px;
+    height: 148px;
+    margin-bottom: 0.75rem;
+    justify-self: start;
+  }
+  .page-field .supervisor-profile__badge {
+    left: 0;
+    transform: none;
+  }
+}
