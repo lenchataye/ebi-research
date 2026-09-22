@@ -374,9 +374,9 @@
     });
   }
 
-  /* ==========================================================================
-     Mobile Navigation
-     ========================================================================== */
+/* ==========================================================================
+   Mobile Navigation
+   ========================================================================== */
   function initNav() {
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.site-nav');
@@ -405,7 +405,19 @@
       else openNav();
     });
 
-    nav.querySelectorAll('a').forEach(link => {
+    // Handle mobile dropdown accordions
+    nav.querySelectorAll('.nav-item--has-dropdown > a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (window.matchMedia('(max-width: 1199px)').matches) {
+          e.preventDefault();
+          e.stopPropagation();
+          const parent = link.closest('.nav-item--has-dropdown');
+          parent.classList.toggle('open');
+        }
+      });
+    });
+
+    nav.querySelectorAll('a:not(.nav-item--has-dropdown > a)').forEach(link => {
       link.addEventListener('click', closeNav);
     });
 

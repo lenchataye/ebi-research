@@ -474,8 +474,31 @@ body:not(.page-home) .nav-toggle {
     transform: translateY(-50%);
   }
 
+  /* Mobile accordion dropdowns */
+  .nav-item--has-dropdown > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-item--has-dropdown > a::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c4a35a' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s var(--ease-out);
+    flex-shrink: 0;
+  }
+
+  .nav-item--has-dropdown.open > a::after {
+    transform: rotate(-180deg);
+  }
+
   .nav-dropdown {
-    display: block !important;
+    display: none !important;
     position: static;
     transform: none;
     background: transparent;
@@ -484,6 +507,15 @@ body:not(.page-home) .nav-toggle {
     padding: 0 0 0.5rem 1rem;
     min-width: auto;
     animation: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s var(--ease-out), padding 0.35s var(--ease-out);
+  }
+
+  .nav-item--has-dropdown.open .nav-dropdown {
+    display: block !important;
+    max-height: 500px;
+    padding: 0.5rem 0 0.5rem 1rem;
   }
 
   .nav-dropdown__title {
