@@ -429,6 +429,9 @@ body:not(.page-home) .nav-toggle {
     visibility: hidden;
     transition: transform 0.55s var(--ease-out), visibility 0.55s;
     overflow-y: auto;
+    overscroll-behavior: contain;
+    max-height: 100vh;
+    max-height: 100dvh;
     justify-content: flex-start;
   }
 
@@ -498,6 +501,34 @@ body:not(.page-home) .nav-toggle {
 
   .site-logo__title {
     font-size: 0.875rem;
+  }
+
+  /* The mobile nav panel lives inside the pill capsule. The capsule's
+     backdrop-filter would otherwise become the containing block for the
+     fixed-position nav, shrinking the panel to capsule height (≈ one link).
+     While the menu is open, drop backdrop filters on the header ancestors so
+     the panel positions against the viewport and can show every link. */
+  body.nav-open .site-header.site-header--pill {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+
+  body.nav-open .site-header--pill .site-header__capsule {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  /* Keep brand + toggle above the open panel */
+  body.nav-open .site-header--pill .site-logo,
+  body.nav-open .site-header--pill .nav-toggle {
+    position: relative;
+    z-index: 1002;
   }
 }
 
