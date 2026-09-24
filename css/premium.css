@@ -1092,8 +1092,8 @@ html.lenis, html.lenis body { height: auto; }
 /* Index number badge on portrait */
 .page-researchers .researcher-card__photo .researcher-index {
   position: absolute;
-  right: 6px;
-  bottom: 6px;
+  right: 12px;
+  bottom: 12px;
   z-index: 3;
   min-width: 34px;
   height: 34px;
@@ -1111,6 +1111,9 @@ html.lenis, html.lenis body { height: auto; }
   border: 1px solid rgba(196, 163, 90, 0.55);
   border-radius: 999px;
   box-shadow: 0 4px 14px rgba(15, 41, 34, 0.25);
+  /* keep badge fully inside the circular photo so it is never clipped */
+  transform: none;
+  white-space: nowrap;
 }
 
 /* Right-side editorial typography */
